@@ -1,0 +1,1 @@
+<h1 class="text-3xl font-semibold italic"><span class="text-blue-500">L</span class="text-red-500"><span class="text-green-500">O</span><span  class="text-orange-500">G</span><span class="text-purple-500">O</span></h1>
