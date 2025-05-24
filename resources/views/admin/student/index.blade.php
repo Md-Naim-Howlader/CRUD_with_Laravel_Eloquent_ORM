@@ -15,9 +15,9 @@
                         <th width='3%'>Email</th>
                         <th width='3%'>Gender</th>
                         <th width='5%'>Photo</th>
+                        <th width="8%">Date of birth</th>
                         <th width='11%'>Skills</th>
-                        <th width='3%'>Contact Number</th>
-                        <th width='9%'>Address</th>
+                        <th width='4%'>Contact Number</th>
                         <th width='4%'>Actions</th>
                     </tr>
                 </thead>
@@ -34,9 +34,9 @@
 
                             <img class="rounded-circle w-14" src="{{ asset($student->photo) }}" alt="{{ $student->first_name }}">
                         </td>
+                        <td>{{ \Carbon\Carbon::parse($student->dob)->format('d-m-Y') }}</td>
                         <td>{{$student->skills}}</td>
                         <td>{{$student->contact}}</td>
-                        <td>{{$student->address}}</td>
                         <td class="flex justify-between items-center">
                             <a class="btn btn-success" href="{{route('student.edit', $student->id)}}"><i class="fas fa-edit"></i></a>
 
